@@ -22,7 +22,7 @@ sha256sums=('SKIP')
 build() {
   cd "$_pkgname"
   ./bootstrap.sh
-  ./configure --prefix=/usr --sbindir=/usr/bin --sysconfdir=/etc --localstatedir=/var
+  ./configure --prefix=/usr --sbindir=/usr/bin --sysconfdir=/usr/share --localstatedir=/var
   make -j $(nproc)
 }
 
